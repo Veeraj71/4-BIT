@@ -4,12 +4,19 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    overflow-y: hidden;
 }
 
 .container1 {
     max-width: 1200px;
     margin: 0 auto;
     padding: 24px; /* Equivalent to p-6 */
+    flex: 1; 
+    overflow-y: hidden;
 }
 
 .container {
@@ -105,61 +112,58 @@ body {
     margin-right: 10px; 
   }
 
- /* Footer Styling */
-.footer {
-    background-color: #2b2b2b; /* Darker gray footer background */
-    color: #f7f7f7; /* Light text color */
-    padding: 20px; /* Maintain space */
+  footer {
+    background-color: #2b2b2b;
+    color: white;
     text-align: center;
-    clear: both;
-    width: 100%; /* Full-width footer */
+    padding: 10px 0;
+    width: 100vw; /* Set width to 100% of the viewport width */
+    margin: 0; /* Remove any margin */
     box-sizing: border-box; /* Include padding in width calculation */
-    margin: 0 auto; /* Center footer and remove extra space */
+    left: 0; /* Set left position to 0 */
+    right: 0; /* Set right position to 0 */
+    position: fixed; /* Set position to fixed */
+    bottom: 0; /* Set bottom position to 0 */
+    height: auto; /* Set height to auto */
 }
 
-/* Flexbox for Footer Links */
 .footer-links {
     display: flex;
     justify-content: center;
-    flex-wrap: wrap; /* Allow wrapping for smaller screens */
     margin-bottom: 10px;
-}
-
-.footer-links a {
+  }
+  
+  .footer-links a {
     color: #f7f7f7; /* Light text color for links */
     text-decoration: none;
     margin: 0 15px;
     font-weight: bold;
     transition: color 0.2s ease;
-}
-
-.footer-links a:hover {
+  }
+  
+  .footer-links a:hover {
     color: #cccccc; /* Slightly darker gray on hover */
-}
-
-.footer-copyright {
+  }
+  
+  .footer-copyright {
     font-size: 0.85em;
     color: #999999; /* Soft gray text */
-    margin-top: 10px;
-}
-
-/* Flexbox for Social Links */
-.social-links {
+  }
+  
+  .social-links {
     display: flex;
     justify-content: center;
-    flex-wrap: wrap; /* Allow wrapping for smaller screens */
-    margin-top: 10px;
-}
-
-.social-links a {
+  }
+  
+  .social-links a {
     margin: 0 8px;
     color: #f7f7f7; /* Light text color */
     transition: color 0.2s ease;
-}
-
-.social-links a:hover {
+  }
+  
+  .social-links a:hover {
     color: #cccccc; /* Slightly darker gray on hover */
-}
+  }
 
 /* Grid Container Styles */
 .grid-container {
